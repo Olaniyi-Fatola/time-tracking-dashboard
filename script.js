@@ -29,7 +29,7 @@ const button = document.getElementById("period");
     }
 }*/
 
-monthly()
+weekly()
 
 async function daily() {
     const titles = await getdata();
