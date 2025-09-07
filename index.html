@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
     <title>Time-tracking-dashboard</title>
 </head>
 <body>
@@ -22,115 +22,14 @@
                         <h2>Jeremy Robson</h2>
                     </div>
                 </div>
-                <div  class="period">
-                    <h3>Daily</h3>
-                    <h3>Weekly</h3>
-                    <h3>Monthly</h3>
+                <div class="period">
+                    <button id="daily" type="button" >Daily</button>
+                    <button id="weekly" type="button" >Weekly</button>
+                    <button id="monthly" type="button" >Monthly</button>
                 </div>
             </div>
 
-            <div class="boxes">
-                <div class="work" >
-                    <img class="icons" src="images\icon-work.svg" alt="work icon">
-                    <div class="cards">
-                        <div class="subject" >
-                            <div class="desktopdot">
-                                <h4>Work</h4>
-                                <img class="dots" src="images\icon-ellipsis.svg" alt="ellipsis icon">
-                            </div>
-                            <h5>32hrs</h5>
-                        </div>
-                        <div class="ellipsis">
-                            <img class="threeDots" src="images\icon-ellipsis.svg" alt="ellipsis icon">
-                            <p>Last Week-36hrs</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="play">
-                    <img class="icons" src="images\icon-play.svg" alt="play icon">
-                    <div class="cards">
-                        <div class="subject">
-                            <div class="desktopdot">
-                                <h4>Play</h4>
-                                <img class="dots" src="images\icon-ellipsis.svg" alt="ellipsis icon">
-                            </div>
-                            <h5>10hrs</h5>
-                        </div>
-                        <div class="ellipsis">
-                            <img class="threeDots" src="images\icon-ellipsis.svg" alt="ellipsis icon">
-                            <p>Last Week-8hrs</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="study">
-                    <img class="icons" src="images\icon-study.svg" alt="study icon">
-                    <div class="cards">
-                        <div class="subject" >
-                            <div class="desktopdot">
-                                <h4>Study</h4>
-                                <img class="dots" src="images\icon-ellipsis.svg" alt="ellipsis icon">
-                            </div>
-                            <h5>4hrs</h5>
-                        </div>
-                        <div class="ellipsis">
-                            <img class="threeDots" src="images\icon-ellipsis.svg" alt="ellipsis icon">
-                            <p>Last Week-7hrs</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="exercise">
-                    <img class="icons" src="images\icon-exercise.svg" alt="exercise icon">
-                    <div class="cards">
-                        <div class="subject" >
-                            <div class="desktopdot">
-                                <h4>Exercise</h4>
-                                <img class="dots" src="images\icon-ellipsis.svg" alt="ellipsis icon">
-                            </div>
-                            <h5>4hrs</h5>
-                        </div>
-                        <div class="ellipsis">
-                            <img class="threeDots" src="images\icon-ellipsis.svg" alt="ellipsis icon">
-                            <p>Last Week-5hrs</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="social">
-                    <img class="icons" src="images\icon-social.svg" alt="social icon">
-                    <div class="cards">
-                        <div class="subject" >
-                            <div class="desktopdot">
-                                <h4>Social</h4>
-                                <img class="dots" src="images\icon-ellipsis.svg" alt="ellipsis icon">
-                            </div>
-                            <h5>5hrs</h5>
-                        </div>
-                        <div class="ellipsis">
-                            <img class="threeDots" src="images\icon-ellipsis.svg" alt="ellipsis icon">
-                            <p>Last Week-10hrs</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="selfcare">
-                    <img class="icons" src="images\icon-self-care.svg" alt="self care icon">
-                    <div class="cards">
-                        <div class="subject" >
-                            <div class="desktopdot">
-                                <h4>Self Care</h4>
-                                <img class="dots" src="images\icon-ellipsis.svg" alt="ellipsis icon">
-                            </div>
-                            <h5>2hrs</h5>
-                        </div>
-                        <div class="ellipsis">
-                            <img class="threeDots" src="images\icon-ellipsis.svg" alt="ellipsis icon">
-                            <p>Last Week-2hrs</p>
-                        </div>
-                    </div>
-                </div>
+            <div id="boxes" class="" >
             </div>
         </div>
 
