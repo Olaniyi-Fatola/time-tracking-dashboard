@@ -4,17 +4,7 @@ const Monthly = document.getElementById("#monthly");
 const button = document.getElementById("period");
 
  
-/*function main(){
-    if(button === Weekly){
-        // weekly time track dashboard appear
-        
-        weekly();
-    }
-    else{
-        // it disappears when other time is clicked
-        daily();
-    }
-}
+
 
 /*Monthly.onclick = function(){
     if(){
@@ -29,7 +19,6 @@ const button = document.getElementById("period");
     }
 }*/
 
-weekly()
 
 async function daily() {
     const titles = await getdata();
@@ -119,7 +108,6 @@ async function monthly() {
 }
 
 
-
 async function getdata() {
     const res = await fetch ("./database/data.json");
     const data = await res.json();
@@ -127,3 +115,24 @@ async function getdata() {
     return data;
 }
 
+
+async function main(){
+    const abc = await daily();
+    const bcd = await weekly();
+    const efg = await monthly();
+
+    if(button === Weekly){
+        // weekly time track dashboard appear
+        
+        abc;
+    }
+    else if(button === Daily){
+        // it disappears when other time is clicked
+        bcd;
+    }
+    else {
+        efg;
+    }
+}
+
+button.addEventListener('click', main);
