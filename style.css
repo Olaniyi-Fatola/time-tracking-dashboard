@@ -161,7 +161,9 @@ button {
         display: none;
     }
 }
-#boxes{
+
+
+#boxes.visible, #boxesMonthly.visible, #boxes2.visible{
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -173,6 +175,16 @@ button {
     gap: 1.5rem;
     }
 }
+#boxesMonthly{
+    display: none;
+}
+#boxes{
+    display:none;
+}
+#boxes2{
+    display: none;
+}
+
 #Work, #Play, #Study, #Exercise, #Social, #Selfcare{
     width: 19rem;
     height: 9rem;
