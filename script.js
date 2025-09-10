@@ -30,7 +30,7 @@ async function daily() {
         titleCard.innerHTML += `
         <div id="${title.title}">
         <img class="icons" src="${title.image}" alt="work icon">
-            <div id="cards">
+            <div class="cards">
                 <div class="subject" >
                     <div class="desktopdot">
                         <h3>${title.title}</h3>
@@ -75,7 +75,7 @@ async function monthly() {
         titleCard.innerHTML += `
         <div id="${title.title}">
         <img class="icons" src="${title.image}" alt="work icon">
-            <div id="cards">
+            <div class="cards">
                 <div class="subject" >
                     <div class="desktopdot">
                         <h3>${title.title}</h3>

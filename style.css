@@ -223,7 +223,7 @@ button {
 #Selfcare{
     background-color: var(--clr-selfcare);
 }
-#cards{
+.cards{
     display: flex;
     position: relative;
     width: 19rem;
