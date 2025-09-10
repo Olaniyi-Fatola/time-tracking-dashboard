@@ -26,7 +26,7 @@ body{
     background-color: var(--clr-navy-950);
     align-content: center;
     color: var(--clr-navy-200);
-    min-height: 100dhv;
+    min-height: 100dvh;
 }
 
 .wrapper{
@@ -149,8 +149,8 @@ button {
 
     @media (min-width:43rem) {
         display: flex;
-        width: 21px;
-        height: 5px;
+        width: 1.3rem;
+        height: 0.3rem;
         align-self: center;
         margin-block-start: 0.6rem;
     }
