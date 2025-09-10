@@ -33,7 +33,7 @@ async function daily() {
             <div id="cards">
                 <div class="subject" >
                     <div class="desktopdot">
-                        <h4>${title.title}</h4>
+                        <h3>${title.title}</h3>
                         <img class="dots" src="${title.ellipsis}" alt="ellipsis icon">
                     </div>
                     <h5>${title.timeframes.daily.current}hrs</h5>
@@ -78,7 +78,7 @@ async function monthly() {
             <div id="cards">
                 <div class="subject" >
                     <div class="desktopdot">
-                        <h4>${title.title}</h4>
+                        <h3>${title.title}</h3>
                         <img class="dots" src="${title.ellipsis}" alt="ellipsis icon">
                     </div>
                     <h5>${title.timeframes.monthly.current}hrs</h5>

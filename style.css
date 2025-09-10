@@ -297,7 +297,7 @@ button {
 #Selfcare #cards, #Exercise #cards{
     margin-block-start: -1.5em;
 }
-h4{
+h3{
     font-size: clamp(0.8rem, 0.6944rem + 0.4507vw, 1.1rem);
     font-weight: 400;
     color: var(--clr-white);
