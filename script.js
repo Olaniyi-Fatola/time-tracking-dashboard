@@ -2,6 +2,7 @@ const Daily = document.getElementById("daily");
 const Weekly = document.getElementById('weekly')
 const Monthly = document.getElementById("monthly");
 let clickCount = 0;
+let click = 0;
 
  
 //This show the daily dashboard also reverting back to the weekly dashbaord
@@ -30,7 +31,7 @@ async function daily() {
         titleCard.innerHTML += `
         <div id="${title.title}">
         <img class="icons" src="${title.image}" alt="work icon">
-            <div class="cards">
+            <div id="cards">
                 <div class="subject" >
                     <div class="desktopdot">
                         <h3>${title.title}</h3>
@@ -58,9 +59,9 @@ Monthly.onclick = function(){
 
 //Refresh the page to avoid increment in the monthly() for loop
 Monthly.addEventListener('click', () => {
-    clickCount++; // Increment the counter on each click
+    click++; // Increment the counter on each click
 
-    if (clickCount === 2) {
+    if (click === 2) {
         location.reload(); // Refresh the page on the second click
     }
 });
@@ -75,7 +76,7 @@ async function monthly() {
         titleCard.innerHTML += `
         <div id="${title.title}">
         <img class="icons" src="${title.image}" alt="work icon">
-            <div class="cards">
+            <div id="cards">
                 <div class="subject" >
                     <div class="desktopdot">
                         <h3>${title.title}</h3>
