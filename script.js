@@ -13,19 +13,20 @@ Daily.onclick = function(){
         daily();
 }
 //Refresh the page to avoid increment in the daily() for loop
-Daily.addEventListener('click', () => {
+/*Daily.addEventListener('click', () => {
         clickCount++; // Increment the counter on each click
 
         if (clickCount === 2) {
             location.reload(); // Refresh the page on the second click
         }
-    });
+    });*/
 async function daily() {
     const titles = await getdata();
 
     
     const titleCard = document.querySelector('#boxes');
 
+    titleCard.innerHTML = "";
     for(const title of titles){
 
         titleCard.innerHTML += `
@@ -58,19 +59,20 @@ Monthly.onclick = function(){
     }
 
 //Refresh the page to avoid increment in the monthly() for loop
-Monthly.addEventListener('click', () => {
+/*Monthly.addEventListener('click', () => {
     click++; // Increment the counter on each click
 
     if (click === 2) {
         location.reload(); // Refresh the page on the second click
     }
-});
+});*/
 async function monthly() {
     const titles = await getdata();
 
     
     const titleCard = document.querySelector('#boxesMonthly');
 
+    titleCard.innerHTML = "";
     for(const title of titles){
 
         titleCard.innerHTML += `
