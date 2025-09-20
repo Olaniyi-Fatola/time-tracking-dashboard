@@ -38,7 +38,7 @@ async function daily() {
                         <h3>${title.title}</h3>
                         <img class="dots" src="${title.ellipsis}" alt="ellipsis icon">
                     </div>
-                    <h5>${title.timeframes.daily.current}hrs</h5>
+                    <h4>${title.timeframes.daily.current}hrs</h4>
                 </div>
                 <div class="ellipsis">
                     <img class="threedots" src="${title.ellipsis}" alt="ellipsis icon">
